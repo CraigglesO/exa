@@ -87,6 +87,7 @@ lazy_static! {
         m.insert("npmignore", '\u{e71e}'); // 
         m.insert("PKGBUILD", '\u{f303}'); // 
         m.insert("rubydoc", '\u{e73b}'); // 
+        m.insert("src", '\u{f121}'); // 
         m.insert("yarn.lock", '\u{e718}'); // 
 
         m
@@ -343,6 +344,7 @@ pub fn icon_for_file(file: &File<'_>) -> char {
             "tz"            => '\u{f410}', // 
             "tzo"           => '\u{f410}', // 
             "video"         => '\u{f03d}', // 
+            "v"             => '\u{e62b}', //  (reuse vim for now)
             "vim"           => '\u{e62b}', // 
             "vue"           => '\u{fd42}', // ﵂
             "war"           => '\u{e256}', // 
@@ -360,6 +362,7 @@ pub fn icon_for_file(file: &File<'_>) -> char {
             "xz"            => '\u{f410}', // 
             "yaml"          => '\u{f481}', // 
             "yml"           => '\u{f481}', // 
+            "zig"           => '\u{e6a9}', // 
             "zip"           => '\u{f410}', // 
             "zsh"           => '\u{f489}', // 
             "zsh-theme"     => '\u{f489}', // 
@@ -369,6 +372,6 @@ pub fn icon_for_file(file: &File<'_>) -> char {
         }
     }
     else {
-        '\u{f016}'
+        '\u{f489}' // prob a program
     }
 }
